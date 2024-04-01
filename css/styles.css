@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    min-width: 400px;
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #454545;
+
+    #title {
+        text-align: center;
+        font-size: 1.2em;
+    };
+
+    .field {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 100%;
+            height: 30px;
+            outline: none;
+            padding: 0px 10px;
+            border-radius: 4px;
+            border: 1px solid gray;
+            color: #646464;
+        };
+
+        input:focus {
+            border: 1px solid #2898ee;
+        };
+
+        label{
+            display: flex;
+            width: 100%;
+            height: 25px;
+            align-items: center;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 5px
+        };
+    }
+}
+
+.btn-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 15px 0px 15px;
+    button {
+        width: 30%;
+        height: 45px;
+        font-size: 1em;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+    };
+
+    button[type="reset"]{
+        background-color: rgb(255, 196, 0);
+        color: #323232;
+        outline: 1px solid rgb(255, 196, 0);
+    };
+
+    button[type="submit"] {
+        background-color: #2898ee;
+        color: white;
+        outline: 1px solid #2898ee;
+    };
+
+    button[type="reset"]:hover, button[type="reset"]:focus {
+        background-color: rgb(255, 210, 0);
+        color: #323232;
+        outline: 1px solid rgb(255, 210, 0);
+    };
+
+    button[type="submit"]:hover, button[type="submit"]:focus {
+        background-color: #0db9ee;
+        color: white;
+        outline: 1px solid #0db9ee;
+    };
+
+    button[type="reset"]:active {
+        background-color: rgb(255, 176, 0);
+        color: #323232;
+        outline: none;
+    };
+
+    button[type="submit"]:active {
+        background-color: #237fe9;
+        color: white;
+        outline: none;
+    };
+}
+
+form .field input.valid{
+    border: 1px solid coral;
+}
+
+form .field input.invalid{
+    border: 1px solid  limegreen;
+}

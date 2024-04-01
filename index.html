@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Validación de formularios</title>
+</head>
+<body>
+    <form action="">
+        <div id="title">
+            <h2>Formulario</h2>
+        </div>
+        <div class="field">
+            <label for="txtName">* Nombre</label>
+            <input type="text" id="txtName" required>
+        </div>
+        <div class="field">
+            <label for="txtUser">* Usuario</label>
+            <input type="text" id="txtUser" required>
+        </div>
+        <div class="field">
+            <label for="txtPass">* Contraseña</label>
+            <input type="password" id="txtPass" required>
+        </div>
+        <div class="field">
+            <label for="txtConfirPass">* Confirmar contraseña</label>
+            <input type="password" id="txtConfirPass" required>
+        </div>
+        <div class="field">
+            <label for="txtPhoneNumber">* Teléfono</label>
+            <input type="text" id="txtPhoneNumber" maxlength="10" pattern="[0-9]+">
+        </div>
+        <div class="btn-area">
+            <button type="reset" name="btnReset" id="btnReset">Reiniciar</button>
+            <button type="submit" name="btnAcept" id="btnAcept">Aceptar</button>
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
