@@ -12,24 +12,24 @@
             <h2>Formulario</h2>
         </div>
         <div class="field">
-            <label for="txtName">* Nombre completo</label>
-            <input type="text" class="" id="txtName" minlength="3" maxlength="50" pattern="^[A-Z][a-z]+(?: [A-Z][a-z]+)*$" required>
+            <label for="txtName">* Nombre completo</label> 
+            <input type="text" id="txtName" required minlength="3" maxlength="50" pattern="^[A-Z][a-z]+(?: [A-Z][a-z]+)+$" value="Dani Flow">
         </div>
         <div class="field">
             <label for="txtUser">* Usuario</label>
-            <input type="text" class="" id="txtUser" minlength="3" maxlength="20" pattern="[\w]+" required>
+            <input type="text" id="txtUser" required minlength="3" maxlength="20" pattern="[\w]+" value="dani99">
         </div>
         <div class="field">
             <label for="txtPass">* Contraseña</label>
-            <input type="password" class="" id="txtPass" minlength="12" maxlength="30" required>
+            <input type="password" id="txtPass" required minlength="12" maxlength="30" value="qwerty123456789">
         </div>
         <div class="field">
-            <label for="txtConfirPass">* Confirmar contraseña</label>
-            <input type="password" class="" id="txtConfirmPass"  minlength="12" maxlength="30" required>
+            <label for="txtConfirmPass">* Confirmar contraseña</label>
+            <input type="password" id="txtConfirmPass" required minlength="12" maxlength="30" value="qwerty123456789">
         </div>
         <div class="field">
             <label for="txtPhoneNumber" id="not-required">Teléfono</label>
-            <input type="text" class="" id="txtPhoneNumber" maxlength="10" pattern="[0-9]+">
+            <input type="text" id="txtPhoneNumber" maxlength="10">
         </div>
         <div class="btn-area">
             <button type="reset" name="btnReset" id="btnReset">Reiniciar</button>
