@@ -114,11 +114,11 @@ form {
     };
 }
 
-form .field input.valid{
+form.validado .field input:valid{
     border: 1px solid  limegreen;
 }
 
-form .field input.invalid{
+form.validado .field input:invalid{
     border: 1px solid coral;
 }
 
