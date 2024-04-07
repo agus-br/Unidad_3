@@ -58,6 +58,10 @@ form {
     }
 }
 
+#not-required {
+    font-weight: 100;
+}
+
 .btn-area {
     width: 100%;
     display: flex;
@@ -111,9 +115,10 @@ form {
 }
 
 form .field input.valid{
-    border: 1px solid coral;
+    border: 1px solid  limegreen;
 }
 
 form .field input.invalid{
-    border: 1px solid  limegreen;
+    border: 1px solid coral;
 }
+
